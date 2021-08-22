@@ -1,1 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.1" xmlns:gx="http://www.google.com/kml/ext/2.1" xmlns:kml="http://www.opengis.net/kml/2.1" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Vieira Custeio.kml</name>
+	<Schema name="Area_do_Imovel" id="Area_do_Imovel">
+		<SimpleField type="string" name="recibo"></SimpleField>
+		<SimpleField type="float" name="modfiscais"></SimpleField>
+		<SimpleField type="string" name="tema"></SimpleField>
+		<SimpleField type="float" name="area"></SimpleField>
+		<SimpleField type="string" name="municipio"></SimpleField>
+		<SimpleField type="string" name="estado"></SimpleField>
+	</Schema>
+	<Style id="style">
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style0">
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>vieira</name>
+		<styleUrl>#stylemap_id2</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Area_do_Imovel">
+				<SimpleData name="recibo">PE-2601102-0586B165C6CB4D25B4B609B9AEE855A3</SimpleData>
+				<SimpleData name="modfiscais">1.5179000000000000270006239588838</SimpleData>
+				<SimpleData name="tema">Área do Imovel</SimpleData>
+				<SimpleData name="area">106.2514999999999929514160612598062</SimpleData>
+				<SimpleData name="municipio">Araripina</SimpleData>
+				<SimpleData name="estado">Pernambuco</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-40.41084058207107,-7.560156262339048,0 -40.4099030889936,-7.56005970293027,0 -40.4080108848879,-7.56202464286187,0 -40.4079024480741,-7.56049683261006,0 -40.4077287359983,-7.56009490350746,0 -40.407446471613,-7.55975759271597,0 -40.4071238623029,-7.55862096293059,0 -40.4067950550182,-7.55811533180936,0 -40.4059671517864,-7.55723273594581,0 -40.4052884749654,-7.55669913724677,0 -40.4049710860325,-7.55631818632785,0 -40.4045543731849,-7.555465183622809,0 -40.4069582784047,-7.55540888786211,0 -40.4083385362893,-7.555396733497221,0 -40.41131145949733,-7.555449966784666,0 -40.41084058207107,-7.560156262339048,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
 
