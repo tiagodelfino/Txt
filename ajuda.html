@@ -1,0 +1,157 @@
+<html>
+
+<body>
+  <div>
+    <h3>Ternario</h3>
+    <p>
+      o ternario e composto por: {condição} ? {retorno se a consição for
+      verdadeira} : {retorno se a consição for false}
+    </p>
+    <p style="background: yellow">
+      Exermplo: let nome = pessoa.nome != null ? pessoa.nome : 'Sem Nome';
+    </p>
+    <div>Em um ternario as condições são <b>SEMPRE</b> antes do <b>?</b>.</div>
+    <p>
+      Se tiver que testar a mesma variavel mais de uma vez, tem que repetir a
+      parte da variavel.
+    <p style="background: yellow">Exemplo: let podeBeber = pessoa.idade >= 18 &&
+      pessoa.idade <= 60 ? true : false; </p> Veja que no exemplo acima, a pessoa so pode beber se tive a idade maior
+        ou igual que 18 e menor ou igual a 60; <b>Então em cada comparação tenho e referenciar "pessoa.idade"</b> ,
+        não
+        existe comparação <b style="background: red">[pessoa.idade>=18 && <=60] </b>. </p>
+  </div>
+  <div>
+    <h3>If e else</h3>
+    uma comparação de if e else e feita para execultar trecho de codigo caso
+    uma condição seja verdadeida ou falsa. Veja que para existir um if não e
+    necessario ter um else, porém para exisitr um else e obrigatorio existir
+    um if.
+    <p></p>
+    <div style="background: yellow">
+      <div>Exemplo if sem else:</div>
+      <pre style="tab-size: 1">        if(pessoa.nome != null){</pre>
+      <pre style="tab-size: 1">           let nome = pessoa.nome</pre>
+      <pre style="tab-size: 1">        }</pre>
+    </div>
+    <div style="background: yellow">
+      <div>Exemplo if e else:</div>
+      <pre style="tab-size: 1">        if(pessoa.nome != null){</pre>
+      <pre style="tab-size: 1">           let nome = pessoa.nome</pre>
+      <pre style="tab-size: 1">        }else</pre>
+      <pre style="tab-size: 1">           let nome = 'Sem Nome'</pre>
+      <pre style="tab-size: 1">        }</pre>
+    </div>
+    <p>
+      Veja que em um if/else a condição <b>SEMPRE</b> fica dentro <b>()</b> do if, e o else <b>NUNCA</b> tera <b>()</b>
+    </p>
+  </div>
+
+  <div>
+    <h3>Comparação</h3>
+    <p>
+      existe 2 tipos de verificador: && / ||
+    </p>
+    <p>
+      && usamos quando um ternario ou um if(), tem mais de uma condição para ser testada e <b>todas as condições devem
+        ser verdadeiras</b>.
+    </p>
+    <p style="background: yellow">
+      Exemplo: let nomeTeste = pessoa.nome != null && pessoa.idade == 10 ? pessoa.nome : 'Sem Nome';
+    </p>
+    <div>No caso acima a variavel nomeTeste,<b>so</b> vai receber o valor de pessoa.nome, se pessoa.nome não for null e
+      a idade for igual a 10, as duas condições tem que ser verdadeira</div>
+    <p>
+      || usamos quando um ternario ou um if(), tem mais de uma condição para ser testada e <b>apenas uma das condições
+        devem ser verdadeiras</b> .
+    </p>
+    <p style="background: yellow">
+      Exemplo: let nomeTeste = pessoa.nome != null && pessoa.idade == 10 ? pessoa.nome : 'Sem Nome';
+    </p>
+    <div>No caso acima a variavel nomeTeste, vai receber o valor de pessoa.nome, se pessoa.nome não for null <b>ou</b>
+      idade for igual a 10, apenas uma da duas condições tem que ser verdadeira</div>
+
+    <p>para fazer comparações temos os operadores <b> == / != / > / < />= / <= </b>
+    </p>
+
+    <p>'==' esse operador usamos para compara se um valor e <b>IGUAL</b> ao outro. <i style="background: yellow">
+        Exemplo: 'Tiago' == 'Tiago' - resultado true / 'Tiago' == 'Jose' - resultado false </i></p>
+    <p>'!=' esse operador usamos para compara se um valor e <b>DIFERENTE</b> ao outro. <i style="background: yellow">
+        Exemplo: 'Tiago' != 'Tiago' - resultado false / 'Tiago' != 'Jose' - resultado true </i></p>
+    <p>'<' esse operador usamos para compara se um valor e <b>MENOR</b> ao outro. <i style="background: yellow">
+          Exemplo: 10 < 20 - resultado true / 10 < 10 - resultado false </i>
+    </p>
+    <p>'<=' esse operador usamos para compara se um valor e <b>MENOR OU IGUAL</b> ao outro. <i
+          style="background: yellow"> Exemplo: 10 <= 8 - resultado false / 10 <=10 - resultado true </i>
+    </p>
+    <p>'>' esse operador usamos para compara se um valor e <b>MAIOR</b> ao outro. <i style="background: yellow">
+        Exemplo: 10 > 5 - resultado true / 10 > 10 - resultado false </i></p>
+    <p>'>=' esse operador usamos para compara se um valor e <b>MAIOR OU IGUAL</b> ao outro. <i
+        style="background: yellow"> Exemplo: 10 >= 12 - resultado false / 10 >= 10 - resultado true </i></p>
+
+  </div>
+
+  <div>
+    <h3>Receber/Atribuir</h3>
+    <p>
+      quando falamos que uma variavel vai receber um valor, ou vair ser atribuidor um valor estamos falando do operador
+      <b>=</b>
+    </p>
+    <p>
+      Vejamos se eu digo que a variavel nome receber uma string com valor Tiago estou dizendo que:
+    </p>
+    <p style="background: yellow">
+      Exemplo: let nome <b>=</b> 'Tiago'
+    </p>
+
+    <p>
+      ou se eu digo nome recebe o valor Jose, represento:
+    </p>
+    <p style="background: yellow">
+      Exemplo: let nome <b>=</b> 'Jose'
+    </p>
+    <p>
+      ou se eu digo atribui a variavel nome o valor Alysson, quero dizer:
+    </p>
+    <p style="background: yellow">
+      Exemplo: let nome <b>=</b> 'Alysson'
+    </p>
+
+  </div>
+
+  <div>
+    <h3>Array []</h3>
+    <p>Um array e simbolizado por <b>[]</b>, o array e como uma lista, onde vc pode inserir varios objetos do mesmo
+      tipo.</p>
+    <div>um array <b> sempre inicia em 0</b></div>
+    <div>Podemos criar um array da seguinte forma let arrayNome: string[] = []; nesse exemplo criamos um array de string
+      vazio</div>
+
+    <p></p>
+    <div style="background: yellow">Exemplo criando array: <b>let arrayNome: string[] = [];</b> </div>
+    <div style="background: yellow">Exemplo adicionando itens no array:</div>
+    <div style="background: yellow"> <b>arrayNome.push('Tiago');</b></div>
+    <div style="background: yellow"> <b>arrayNome.push('Jose');</b></div>
+    <div style="background: yellow"> <b>arrayNome.push('Alysson');</b></div>
+
+    <p>Veja que acima criamos um array de string vazio, logo em seguida inserimos 3 objetos no array. Lembrando que o
+      array <b> sempre inicia em 0</b>, vamos ter que vai ate a posição 2</p>
+
+    <p>pensando em um cenario onde eu tenha que setar o valor true em uma variavel apenas se na posição 1 tenha o valor
+      'Alysson', vamos recuperar o valor dessa posição da seguinte maneira:</p>
+
+    <div style="background: yellow">Exemplo recuperar o valor de uma posição especifica= arrayNome[1]</b> </div>
+
+    <p>então para criar uma condição vendo um objeto da lista, fazemos uma comparação da seguinte forma:</p>
+
+    <div style="background: yellow">variavelBooleana = arrayNome[1] == 'Alysson' ? true : false;</b> </div>
+    <p>No exemplo acima iremos atribuir a variavelBooleana o valor false, pois na posição [1] do array temos Jose. </p>
+
+    <p>porém pode surgir uma outra necessidade, de verificar se na posição 0 tem Tiago e na 2 tem Jose, podemos comparar
+      da seguinte forma:</p>
+    <div style="background: yellow">variavelBooleana = arrayNome[0] == 'Tiago' && arrayNome[2] == 'Jose' ? true :
+      false;</b> </div>
+    <p>No exemplo acima iremos atribuir a variavelBooleana o valor true, pois as duas condições são verdadeiras. </p>
+  </div>
+</body>
+
+</html>
